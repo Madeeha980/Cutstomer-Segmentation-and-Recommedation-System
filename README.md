@@ -1,17 +1,55 @@
-## 📝 Project Description
+## Customer Segmentation & Recommendation System – ML Project
 
-### Context
-This project was developed as part of the **TCS iON Industry Project (AIP 135)**. The primary objective was to solve the challenge of "one-size-fits-all" marketing by leveraging data-driven insights to understand customer behavior in a retail environment.
+---
 
-### The Problem
-Traditional marketing often fails to engage customers effectively because it treats all shoppers the same. This leads to lower conversion rates and poor customer retention.
+### Objective  
+To analyze retail customer purchasing behavior and develop a machine learning–driven system that enables customer segmentation and personalized product recommendations to support targeted marketing and customer retention strategies.
 
-### The Solution
-I developed an intelligent system that performs two main functions:
-1. **Customer Segmentation:** Using the **K-Means Clustering** algorithm, I categorized customers into distinct groups (such as 'VIP/High-Value,' 'At-Risk,' and 'New Customers') based on their purchasing patterns.
-2. **Personalized Recommendations:** I built a **Hybrid Recommendation Engine** that combines user-similarity (Cosine Similarity) with cluster-based popularity to suggest products that a customer is most likely to buy next.
+---
 
-### Key Highlights:
-* **Advanced Preprocessing:** Applied `RobustScaler` and log transformations to handle outliers, ensuring "VIP" customers didn't skew the model results.
-* **Business Intelligence:** Created a comprehensive **Power BI Dashboard** to visualize the clusters, allowing stakeholders to see the monetary value of each segment at a glance.
-* **TCS Standards:** Followed industry-standard documentation, including a Test Design Document (TDD) to validate model accuracy and business logic.
+### Dataset  
+Retail transactional dataset containing customer-level and transaction-level information such as invoices, product descriptions, quantities, unit prices, and purchase timestamps. The dataset reflects real-world purchasing behavior, including repeat transactions and product returns.
+
+---
+
+### Models Used  
+-K-Means Clustering – Customer segmentation based on behavioral patterns
+
+-User–User Collaborative Filtering – Personalized recommendations using customer similarity
+
+-Hybrid Recommendation Model – Combination of personalization and cluster-level popularity
+
+---
+
+### Techniques  
+- RFM-based feature engineering (Recency, Frequency, Monetary)
+
+- Log transformation and RobustScaler for handling skewed data and outliers
+
+- Elbow Method, Silhouette Score, Davies–Bouldin Index, Calinski–Harabasz Index
+
+- Principal Component Analysis (PCA) for dimensionality reduction and visualization
+
+- Cosine Similarity for user-based recommendation logic
+
+
+---
+
+### Key Insights  
+Loyal and high-value customers contribute the largest share of revenue
+
+At-risk customers show low engagement and long inactivity periods
+
+Hybrid recommendations improve relevance and stability across all segments
+
+---
+
+### Visualization
+
+Interactive Power BI Dashboard for customer segmentation and KPI tracking
+
+Segment-wise analysis to support business and marketing decisions
+
+---
+### Tools  
+Python, Pandas, Scikit-learn, Power BI
